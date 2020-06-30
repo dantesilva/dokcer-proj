@@ -6,17 +6,20 @@ Esse projeto tem por objetivo orquestrar ,com alta disponibilidade, e hospedar s
 ## Quanto ao Ambiente
 Projeto hospedado no Azure. Para tal foi utilizado uma instancia de Máquina Virtual.
 
-### Porque Máquina Virtual e não Docker a as Service?
-
-Em uma máquina virtual, mesmo na nuvem, seria possível simular as condições reais de performance e comportamento. Tornando possível e fácil a migração para um ambiente on premises.
-
-### Configurações da Máquina Virtual: 
+### Máquina Virtual: 
+#### - Configuração
 
 Nome do computador: containers
 Sistema operacional: Linux (debian 10.4)
 Endereço IP público: 40.84.187.192
 Disco: SSD 120 GB
 Mem.: 8GB
+
+### Porque Máquina Virtual e não Docker a as Service?
+
+Em uma máquina virtual, mesmo na nuvem, seria possível simular as condições reais de performance e comportamento. Tornando possível e fácil a migração para um ambiente on premises.
+
+
 
 ###  - Containers:
 
