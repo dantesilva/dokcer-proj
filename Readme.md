@@ -6,11 +6,11 @@ Esse projeto tem por objetivo orquestrar ,com alta disponibilidade, hospedar sis
 ## Quanto ao Ambiente
 Projeto hospedado no Azure. Para tal foi utilizado uma instancia de Máquina Virtual.
 
-Porque Máquina Virtual e não Docker as Service?
+### Porque Máquina Virtual e não Docker as Service?
 
 Em uma máquina virtual, mesmo na nuvem, seria possível simular as condições reais de performance e comportamento. Tornando possível e fácil a migração para um ambiente on premises
 
-Configurações da Máquina Virtual: 
+### Configurações da Máquina Virtual: 
 
 Nome do computador: containers
 Sistema operacional: Linux (debian 10.4)
@@ -18,11 +18,26 @@ Endereço IP público: 40.84.187.192
 Disco: SSD 120 GB
 Mem.: 8GB
 
-Containers:
+### Containers:
 
-Ambiente foi configurado com 8 Container's no total, distribuidos em camadas.
+Ambiente foi configurado com 8 Container's no total, distribuidos em camadas. POdemos separar em três câmdas. Duas de monitoramento e segurança e uma de aplicação
 
- - Prometheus: controle de porformance dos containers, através da geração de Logs.
- - Cadvisor: Trabalha ligado ao redis, gerando graficos em tempo real de acordo com os dados coletados pelo redis
- - Readis: Faz a coleta dos dados das instâncias em docker
- - 
+#### Camada Monitoramente - Prometheus
+ - Prometheus: controle de porformance dos containers, através da geração de Logs;
+ - Cadvisor: Trabalha ligado ao redis, gerando graficos em tempo real de acordo com os dados coletados pelo redis;
+ - Readis: Faz a coleta dos dados das instâncias em docker e armazena em seu baco;
+
+#### Camada de monitoramento Graylog
+
+Essa camada de monitoramento está sendo realizada diretamente no "Sistema Operacional" das instâncias, por meio do Rsyslog. A instância de monitoramento Graylog é composta pelas seguintes aplicações:
+ - Graylog: Aplicação centrelizadora de Logs;
+ - Elasticsearch: Funciona juntamente com o Greaylog. 
+ - Mongo DB: Banco de dados Essencial para o funcionamento do Graylog
+
+#### Camada de Aplicação
+
+Na camada de aplicação temos três containers. Um com php/Apache e outro com PHPMyAdmin
+ - PHP/ Apache: Uma instância dedicada somente para o PHP e Apache;
+ - PHPMyAdmin: Instância rodando o frontend PHPMy Admin.
+    - Observação: Particularmente não recomendo o trabalho com PHPMyAdmin, devido a algumas falhas de segurança bem exploradas por       cibercriminosos. Quando uso, faço somente atráves de túnnel, para garantir a segurança.
+ - Mysql: Uma instância dedicada ao Mysql, que vai receber os dados cadastrados no formulário do FrontEnd
