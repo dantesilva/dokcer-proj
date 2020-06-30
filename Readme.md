@@ -4,7 +4,7 @@
 Esse projeto tem por objetivo orquestrar ,com alta disponibilidade, e hospedar sistema de de cadastro de colaboradores. 
 
 ## Quanto ao Ambiente
-Projeto hospedado no Azure. Para tal foi utilizado uma instancia de Máquina Virtual.
+Projeto hospedado no Microsoft Azure. Para tal foi utilizado uma instancia de Máquina Virtual.
 
 ###  1. Máquina Virtual: 
 
