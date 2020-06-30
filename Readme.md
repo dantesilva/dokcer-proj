@@ -22,7 +22,6 @@ Mem.: 8GB
 
 Ambiente foi configurado com 8 Container's no total, distribuidos em camadas. POdemos separar em três câmdas. Duas de monitoramento e segurança e uma de aplicação
 
-<<<<<<< HEAD
 #### Camada Monitoramente - Prometheus
  - Prometheus: controle de porformance dos containers, através da geração de Logs;
  - Cadvisor: Trabalha ligado ao redis, gerando graficos em tempo real de acordo com os dados coletados pelo redis;
@@ -42,11 +41,8 @@ Na camada de aplicação temos três containers. Um com php/Apache e outro com P
  - PHPMyAdmin: Instância rodando o frontend PHPMy Admin.
     - Observação: Particularmente não recomendo o trabalho com PHPMyAdmin, devido a algumas falhas de segurança bem exploradas por       cibercriminosos. Quando uso, faço somente atráves de túnnel, para garantir a segurança.
  - Mysql: Uma instância dedicada ao Mysql, que vai receber os dados cadastrados no formulário do FrontEnd
-=======
- - Prometheus: controle de porformance dos containers, através da geração de Logs.
- - Cadvisor: Trabalha ligado ao redis, gerando graficos em tempo real de acordo com os dados coletados pelo redis
- - Readis: Faz a coleta dos dados das instâncias em docker
- 
- ## Observação:
- ###  - Readme está em andamento...
->>>>>>> 93d53278cffe4448c4df9640f6d183a44cf790cd
+
+### Diretórios Mapeados
+
+Para o Projeto, foram mapeados alguns diretórios, de forma a grantir a não volatilidade dos dados. Ou seja, para que sejam preservados, mesmo se o container for parado, ou até mesmo exlcuído. Os diretórios seguem uma estrutura, conforme se segue:
+ - 
