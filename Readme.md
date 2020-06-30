@@ -1,7 +1,7 @@
 # HighAvailabilitySystem
 
 ## Escopo
-Esse projeto tem por objetivo orquestrar ,com alta disponibilidade, hospedar sistema de de cadastro de colaboradores. 
+Esse projeto tem por objetivo orquestrar ,com alta disponibilidade, e hospedar sistema de de cadastro de colaboradores. 
 
 ## Quanto ao Ambiente
 Projeto hospedado no Azure. Para tal foi utilizado uma instancia de Máquina Virtual.
@@ -27,4 +27,4 @@ Ambiente foi configurado com 8 Container's no total, distribuidos em camadas.
  - Readis: Faz a coleta dos dados das instâncias em docker
  
  ## Observação:
- ##  - Readme está em andamento...
+ ###  - Readme está em andamento...
