@@ -7,6 +7,9 @@ Esse projeto tem por objetivo orquestrar ,com alta disponibilidade, e hospedar s
 Projeto hospedado no Azure. Para tal foi utilizado uma instancia de Máquina Virtual.
 
 ###  1. Máquina Virtual: 
+
+A máquina virtual foi utilizada apenas para conter o ambiênte. Porém o ambiente não é baseado em máquinas virtuais, e sim em Docker container.
+
 #### Configuração
 
 Nome do computador: containers
