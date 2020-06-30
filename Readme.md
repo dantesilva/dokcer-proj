@@ -18,7 +18,7 @@ Endereço IP público: 40.84.187.192
 Disco: SSD 120 GB
 Mem.: 8GB
 
-### Containers:
+###  - Containers:
 
 Ambiente foi configurado com 8 Container's no total, distribuidos em camadas. POdemos separar em três câmdas. Duas de monitoramento e segurança e uma de aplicação
 
