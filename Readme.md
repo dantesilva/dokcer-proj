@@ -6,7 +6,7 @@ Esse projeto tem por objetivo orquestrar ,com alta disponibilidade, e hospedar s
 ## Quanto ao Ambiente
 Projeto hospedado no Azure. Para tal foi utilizado uma instancia de Máquina Virtual.
 
-###  - Máquina Virtual: 
+###  1. Máquina Virtual: 
 #### Configuração
 
 Nome do computador: containers
@@ -21,7 +21,7 @@ Em uma máquina virtual, mesmo na nuvem, seria possível simular as condições 
 
 
 
-###  - Containers:
+###  2. Containers:
 
 Ambiente foi configurado com 8 Container's no total, distribuidos em camadas. POdemos separar em três câmdas. Duas de monitoramento e segurança e uma de aplicação
 
