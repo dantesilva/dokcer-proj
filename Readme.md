@@ -6,8 +6,8 @@ Esse projeto tem por objetivo orquestrar ,com alta disponibilidade, e hospedar s
 ## Quanto ao Ambiente
 Projeto hospedado no Azure. Para tal foi utilizado uma instancia de Máquina Virtual.
 
-### Máquina Virtual: 
-#### - Configuração
+###  - Máquina Virtual: 
+#### Configuração
 
 Nome do computador: containers
 Sistema operacional: Linux (debian 10.4)
