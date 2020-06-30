@@ -6,9 +6,9 @@ Esse projeto tem por objetivo orquestrar ,com alta disponibilidade, e hospedar s
 ## Quanto ao Ambiente
 Projeto hospedado no Azure. Para tal foi utilizado uma instancia de Máquina Virtual.
 
-### Porque Máquina Virtual e não Docker as Service?
+### Porque Máquina Virtual e não Docker a as Service?
 
-Em uma máquina virtual, mesmo na nuvem, seria possível simular as condições reais de performance e comportamento. Tornando possível e fácil a migração para um ambiente on premises
+Em uma máquina virtual, mesmo na nuvem, seria possível simular as condições reais de performance e comportamento. Tornando possível e fácil a migração para um ambiente on premises.
 
 ### Configurações da Máquina Virtual: 
 
@@ -32,27 +32,30 @@ Ambiente foi configurado com 8 Container's no total, distribuidos em camadas. PO
 Essa camada de monitoramento está sendo realizada diretamente no "Sistema Operacional" das instâncias, por meio do Rsyslog. A instância de monitoramento Graylog é composta pelas seguintes aplicações:
  - Graylog: Aplicação centrelizadora de Logs;
  - Elasticsearch: Funciona juntamente com o Greaylog. 
- - Mongo DB: Banco de dados Essencial para o funcionamento do Graylog
+ - Mongo DB: Banco de dados Essencial para o funcionamento do Graylog.
 
 #### Camada de Aplicação
 
 Na camada de aplicação temos três containers. Um com php/Apache e outro com PHPMyAdmin
  - PHP/ Apache: Uma instância dedicada somente para o PHP e Apache;
- - PHPMyAdmin: Instância rodando o frontend PHPMy Admin.
-    - Observação: Particularmente não recomendo o trabalho com PHPMyAdmin, devido a algumas falhas de segurança bem exploradas por       cibercriminosos. Quando uso, faço somente atráves de túnnel, para garantir a segurança.
- - Mysql: Uma instância dedicada ao Mysql, que vai receber os dados cadastrados no formulário do FrontEnd
+ - PHPMyAdmin: Instância rodando o frontend PHPMy Admin;
+    - Observação: Particularmente não recomendo o trabalho com PHPMyAdmin, devido a algumas falhas de segurança bem exploradas por       cibercriminosos. Quando uso, faço somente atráves de túnnel, para garantir a segurança;
+ - Mysql: Uma instância dedicada ao Mysql, que vai receber os dados cadastrados no formulário do FrontEnd;
 
 #### Diretórios Mapeados
 
 Para o Projeto, foram mapeados alguns diretórios, de forma a grantir a não volatilidade dos dados. Ou seja, para que sejam preservados, mesmo se o container for parado, ou até mesmo exlcuído. Os diretórios seguem uma estrutura, conforme se segue:
-- docker-proj - Diretório raiz
-    -  Mysql-Data - Arquivos do Banco Mysql da Aplicação
-    - prometheus - Pasta de arquivo de configuração do prometheus
-        - prometheus.yml - Arquivo de configuração para comunicação com o CardVisor
-    - rsyslog - Pasta com arquivo rsyslog.conf, compartilhado com todas as instâncias para envio de Logs para o Graylog
-    
-    - docker-compose.yml - Arquivo de coniguração geral do Docker Compose para carregamento dos serviços
-    - Dockerfile - Arquivo usado para personalizar as imagens
-    - Readme.md - Arquivo de documentação do projeto
+- docker-proj - Diretório raiz;
+    -  Mysql-Data - Arquivos do Banco Mysql da Aplicação;
+    - prometheus - Pasta de arquivo de configuração do prometheus;
+        - prometheus.yml - Arquivo de configuração para comunicação com o CardVisor;
+    - rsyslog - Pasta com arquivo rsyslog.conf, compartilhado com todas as instâncias para envio de Logs para o Graylog;
+    - docker-compose.yml - Arquivo de coniguração geral do Docker Compose para carregamento dos serviços;
+    - Dockerfile - Arquivo usado para personalizar as imagens;
+    - Readme.md - Arquivo de documentação do projeto;
+
+#### Portas de comunicação
+
+As aplicações estão com as portas padrão de comunicação mapeadas. 
 
      
