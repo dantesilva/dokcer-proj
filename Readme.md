@@ -25,7 +25,7 @@ Ambiente foi configurado com 8 Container's no total, distribuidos em camadas. PO
 #### Camada Monitoramente - Prometheus
  - Prometheus: controle de porformance dos containers, através da geração de Logs;
  - Cadvisor: Trabalha ligado ao redis, gerando graficos em tempo real de acordo com os dados coletados pelo redis;
- - Readis: Faz a coleta dos dados das instâncias em docker e armazena em seu baco;
+ - Readis: Faz a coleta dos dados das instâncias em docker e armazena em seu banco;
 
 #### Camada de monitoramento Graylog
 
