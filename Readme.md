@@ -42,7 +42,7 @@ Na camada de aplicação temos três containers. Um com php/Apache e outro com P
     - Observação: Particularmente não recomendo o trabalho com PHPMyAdmin, devido a algumas falhas de segurança bem exploradas por       cibercriminosos. Quando uso, faço somente atráves de túnnel, para garantir a segurança.
  - Mysql: Uma instância dedicada ao Mysql, que vai receber os dados cadastrados no formulário do FrontEnd
 
-### Diretórios Mapeados
+#### Diretórios Mapeados
 
 Para o Projeto, foram mapeados alguns diretórios, de forma a grantir a não volatilidade dos dados. Ou seja, para que sejam preservados, mesmo se o container for parado, ou até mesmo exlcuído. Os diretórios seguem uma estrutura, conforme se segue:
 - docker-proj - Diretório raiz
