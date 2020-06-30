@@ -27,7 +27,7 @@ Ambiente foi configurado com 8 Container's no total, distribuidos em camadas. PO
  - Cadvisor: Trabalha ligado ao redis, gerando graficos em tempo real de acordo com os dados coletados pelo redis;
  - Readis: Faz a coleta dos dados das instâncias em docker e armazena em seu banco;
 
-#### Camada de monitoramento Graylog
+#### Camada de monitoramento - Graylog
 
 Essa camada de monitoramento está sendo realizada diretamente no "Sistema Operacional" das instâncias, por meio do Rsyslog. A instância de monitoramento Graylog é composta pelas seguintes aplicações:
  - Graylog: Aplicação centrelizadora de Logs;
