@@ -1,9 +1,9 @@
-#HighAvailabilitySystem
+# HighAvailabilitySystem
 
-##Escopo
+## Escopo
 Esse projeto tem por objetivo orquestrar ,com alta disponibilidade, hospedar sistema de de cadastro de colaboradores. 
 
-##Quanto ao Ambiente
+## Quanto ao Ambiente
 Projeto hospedado no Azure. Para tal foi utilizado uma instancia de Máquina Virtual.
 
 Porque Máquina Virtual e não Docker as Service?
