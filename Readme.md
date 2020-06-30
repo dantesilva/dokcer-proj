@@ -45,7 +45,7 @@ Na camada de aplicação temos três containers. Um com php/Apache e outro com P
 ### Diretórios Mapeados
 
 Para o Projeto, foram mapeados alguns diretórios, de forma a grantir a não volatilidade dos dados. Ou seja, para que sejam preservados, mesmo se o container for parado, ou até mesmo exlcuído. Os diretórios seguem uma estrutura, conforme se segue:
- - docker-proj - Diretório raiz
+- docker-proj - Diretório raiz
         - Mysql-Data - Arquivos do Banco Mysql da Aplicação
         - prometheus - Pasta de arquivo de configuração do prometheus
             - prometheus.yml - Arquivo de configuração para comunicação com o CardVisor
