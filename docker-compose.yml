@@ -1,6 +1,7 @@
 version: '3'
 services:
-  #prometheus
+  #--------------------------------Monitoramento Prometheus--------------------------------------
+  ##prometheus
   prometheus:
     image: prom/prometheus:latest
     container_name: prometheus
@@ -12,6 +13,7 @@ services:
     - ./prometheus/prometheus.yml:/etc/prometheus/prometheus.yml:ro
     depends_on:
     - cadvisor
+  ##Cadvisor - Monitoramento com gráficos
   cadvisor:
     image: gcr.io/google-containers/cadvisor:latest
     container_name: cadvisor
@@ -28,7 +30,9 @@ services:
     image: redis:latest
     container_name: redis
     ports:
-    - 6379:6379
+      - 6379:6379
+  #-------------------------------Aplicação-------------------------->
+  ##Banco de Dados Relacional da Aplicação - MYSQL    
   mysql:
     image: mysql:8.0.19
     command: --default-authentication-plugin=mysql_native_password
@@ -41,7 +45,6 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: K@bum!
       MYSQL_DATABASE: 'envio_mensagens'
-
   #Web server
   php:
     build: .
@@ -53,8 +56,7 @@ services:
     - '80:80'
     links:
     - mysql    
-   
-
+  #Phpmyadmin 
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
     links:
@@ -65,8 +67,7 @@ services:
     - ./rsyslog/rsyslog.conf:/etc/rsyslog.conf
     environment:
       - PMA_ARBITRARY=1
-
-      
+  #--------------------------------------Monitoramento Graylog---------------------->    
   # MongoDB: https://hub.docker.com/_/mongo/
   mongo:
     image: mongo:3
@@ -98,7 +99,7 @@ services:
       - GRAYLOG_PASSWORD_SECRET=somepasswordpepper
       # Password: admin
       - GRAYLOG_ROOT_PASSWORD_SHA2=8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918
-      - GRAYLOG_HTTP_EXTERNAL_URI=http://192.168.15.20:9000/
+      - GRAYLOG_HTTP_EXTERNAL_URI=http://40.84.187.192:9000/
     networks:
       - graylog
     depends_on:
@@ -115,6 +116,7 @@ services:
       - 12201:12201
       # GELF UDP
       - 12201:12201/udp
+#----------------------------------Rede para comunicação das aplicações graylog--------------------->
 networks:
   graylog:
     driver: bridge
