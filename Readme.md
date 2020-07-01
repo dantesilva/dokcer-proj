@@ -69,6 +69,14 @@ As aplicações estão com as portas padrão de comunicação mapeadas.
 
 Conforme falado anteriormente, cada aplicação tem uma função específca no ambiene. O acesso a cada aplicação deve ser através dos seguintes endereços:
 
+Graylog: http://40.84.187.192:9000
+
+Prometheus: http://40.84.187.192:9090
+
+Cardvisor: http://40.84.187.192:8080
+
+Quanto as outras aplicações, elas tem portas de comunicação apenas dentro do próprio ambiente. Não estão abertas ao "mundo exterior", pois seus dados são interprados pelas aplicações FrontEnd acima.
+
 #### Aplicação PHP 
 
 http://40.84.187.192/msg
@@ -81,12 +89,6 @@ O segundo link é para cadastro de colaboradores - Exemplificando por exemplo co
         Usuario: Admin
         Senha: asdf
 
-Graylog: http://40.84.187.192:9000
 
-Prometheus: http://40.84.187.192:9090
-
-Cardvisor: http://40.84.187.192:8080
-
-Quanto as outras aplicações, elas tem portas de comunicação apenas dentro do próprio ambiente. Não estão abertas ao "mundo exterior", pois seus dados são interprados pelas aplicações FrontEnd acima.
 
      
