@@ -86,7 +86,9 @@ http://40.84.187.192/colaboradores
 O primeiro link acesso aplicação para envio de mensagens. 
 O segundo link é para cadastro de colaboradores - Exemplificando por exemplo colaboradores em um Hospital. Esses colaboradores podem ser funcionarios e terceiros.
     Dados de acesso para a aplicação colaboradores:
+
         Usuario: Admin
+       
         Senha: asdf
 
 
