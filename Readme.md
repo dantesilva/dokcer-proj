@@ -73,7 +73,7 @@ Aplicação PHP: http://40.84.187.192
 
 Graylog: http://40.84.187.192:9000
 
-Prometheus: http://:40.84.187.192:9090
+Prometheus: http://40.84.187.192:9090
 
 Cardvisor: http://40.84.187.192:8080
 
