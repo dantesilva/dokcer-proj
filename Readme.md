@@ -1,4 +1,4 @@
-# HighAvailabilitySystem
+# Sistema de Cadastro e envio de mensagens com alta disponibilidade
 
 ## Escopo
 
