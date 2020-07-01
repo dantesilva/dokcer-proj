@@ -65,7 +65,7 @@ Para o Projeto, foram mapeados alguns diretórios, de forma a grantir a não vol
 
 As aplicações estão com as portas padrão de comunicação mapeadas. 
 
-#### Acesso as aplicações
+#### Aplicações/ Instâncias FrontEnd
 
 Conforme falado anteriormente, cada aplicação tem uma função específca no ambiene. O acesso a cada aplicação deve ser através dos seguintes endereços:
 
