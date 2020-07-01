@@ -71,8 +71,8 @@ Conforme falado anteriormente, cada aplicação tem uma função específca no a
 
 Aplicação PHP - http://40.84.187.192/msg
 
-                http://40.84.187.192/colaboradores
-    
+                 http://40.84.187.192/msg
+
     O primeiro link acesso aplicação para envio de mensagens. 
     O segundo link é para cadastro de colaboradores - Exemplificando por exemplo colaboradores em um Hospital. Esses colaboradores podem ser funcionarios e terceiros.
         Dados de acesso para a aplicação colaboradores:
