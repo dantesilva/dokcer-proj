@@ -26,7 +26,7 @@ Em uma máquina virtual, mesmo na nuvem, seria possível simular as condições 
 
 ###  2. Containers:
 
-Ambiente foi configurado com 8 Container's no total, distribuidos em camadas. POdemos separar em três câmdas. Duas de monitoramento e segurança e uma de aplicação
+Ambiente foi configurado com 8 Container's no total, distribuidos em camadas. Podemos separar em três câmadas. Duas de monitoramento e segurança e uma de aplicação
 
 #### Camada Monitoramente - Prometheus
  - Prometheus: controle de porformance dos containers, através da geração de Logs;
@@ -56,7 +56,7 @@ Para o Projeto, foram mapeados alguns diretórios, de forma a grantir a não vol
     - prometheus - Pasta de arquivo de configuração do prometheus;
         - prometheus.yml - Arquivo de configuração para comunicação com o CardVisor;
     - rsyslog - Pasta com arquivo rsyslog.conf, compartilhado com todas as instâncias para envio de Logs para o Graylog;
-    - docker-compose.yml - Arquivo de coniguração geral do Docker Compose para carregamento dos serviços;
+    - docker-compose.yml - Arquivo de configuração geral do Docker Compose para carregamento dos serviços;
     - Dockerfile - Arquivo usado para personalizar as imagens;
     - Readme.md - Arquivo de documentação do projeto;
 
