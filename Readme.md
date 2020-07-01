@@ -1,7 +1,12 @@
 # HighAvailabilitySystem
 
 ## Escopo
+
 Esse projeto tem por objetivo orquestrar ,com alta disponibilidade, e hospedar sistema de de cadastro de colaboradores. 
+
+## Pré requisitos
+
+Em princípio não existe pré requisito para rodar o prjeto, visto que o Docker Compose faz todo o trabalho de praparação das imagens. portanto pode ser utilizado tanto em um ambiente na nuvem, quanto em um ambiente on premises. Porém alguamas aplicações exigem um pouco mais de perfornamce, como por exemplo o graylog. Porém por se tratar de uma aplicação adaptável, pode ser migrado de um ambiete para outro, sem problemas.
 
 ## Quanto ao Ambiente
 Projeto hospedado no Microsoft Azure. Para tal foi utilizado uma instancia de Máquina Virtual.
@@ -92,5 +97,9 @@ O segundo link é para cadastro de colaboradores - Exemplificando por exemplo co
         Senha: asdf
 
 
+## Considerações finais
 
+Esse é um ambiente funcional que pode ser utilzado em qualquer infraestrutura - on primeses, colocation e cloud. Embora exista uma aplicação demonstrativa rodando nesse ambiente, ele está preparado para receber e monitorar qualquer aplicação. Ele também é flexível e pode ser incorporado outras instâncias trabalhando junto com as existentes para poder obter um melhor resultado visando atingir os objetivos.
+
+Melhorias continuas serão incorporadas nesse projeto.
      
