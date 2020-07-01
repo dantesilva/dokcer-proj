@@ -4,7 +4,7 @@
 
 Esse projeto tem por objetivo orquestrar ,com alta disponibilidade, e hospedar sistema de de cadastro de colaboradores e envio de mensagens.
 
-## Pré requisitos
+## Pré-requisitos
 
 Em princípio não existe pré requisito para rodar o prjeto, visto que o Docker Compose faz todo o trabalho de praparação das imagens. portanto pode ser utilizado tanto em um ambiente na nuvem, quanto em um ambiente on premises. Porém alguamas aplicações exigem um pouco mais de perfornamce, como por exemplo o graylog. Porém por se tratar de uma aplicação adaptável, pode ser migrado de um ambiete para outro, sem problemas.
 
