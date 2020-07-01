@@ -2,7 +2,7 @@
 
 ## Escopo
 
-Esse projeto tem por objetivo orquestrar ,com alta disponibilidade, e hospedar sistema de de cadastro de colaboradores. 
+Esse projeto tem por objetivo orquestrar ,com alta disponibilidade, e hospedar sistema de de cadastro de colaboradores e envio de mensagens.
 
 ## Pré requisitos
 
