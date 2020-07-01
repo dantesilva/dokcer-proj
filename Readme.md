@@ -69,18 +69,17 @@ As aplicações estão com as portas padrão de comunicação mapeadas.
 
 Conforme falado anteriormente, cada aplicação tem uma função específca no ambiene. O acesso a cada aplicação deve ser através dos seguintes endereços:
 
-Aplicação PHP 
+#### Aplicação PHP 
 
 http://40.84.187.192/msg
 
 http://40.84.187.192/colaboradores
 
-
-    O primeiro link acesso aplicação para envio de mensagens. 
-    O segundo link é para cadastro de colaboradores - Exemplificando por exemplo colaboradores em um Hospital. Esses colaboradores podem ser funcionarios e terceiros.
-        Dados de acesso para a aplicação colaboradores:
-            Usuario: Admin
-            Senha: asdf
+O primeiro link acesso aplicação para envio de mensagens. 
+O segundo link é para cadastro de colaboradores - Exemplificando por exemplo colaboradores em um Hospital. Esses colaboradores podem ser funcionarios e terceiros.
+    Dados de acesso para a aplicação colaboradores:
+        Usuario: Admin
+        Senha: asdf
 
 Graylog: http://40.84.187.192:9000
 
