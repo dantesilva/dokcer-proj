@@ -31,7 +31,7 @@ Ambiente foi configurado com 8 Container's no total, distribuidos em camadas. Po
 #### Camada Monitoramente - Prometheus
 
  - Prometheus: controle de porformance dos containers, através da geração de Logs;
- - Cadvisor: Trabalha ligado ao redis, gerando graficos em tempo real de acordo com os dados coletados pelo redis;
+ - cAdvisor: Trabalha ligado ao redis, gerando graficos em tempo real de acordo com os dados coletados pelo redis;
  - Readis: Faz a coleta dos dados das instâncias em docker e armazena em seu banco;
 
 #### Camada de monitoramento - Graylog
@@ -73,7 +73,7 @@ Graylog: http://40.84.187.192:9000
 
 Prometheus: http://40.84.187.192:9090
 
-Cardvisor: http://40.84.187.192:8080
+cAdvisor: http://40.84.187.192:8080
 
 Quanto as outras aplicações, elas tem portas de comunicação apenas dentro do próprio ambiente. Não estão abertas ao "mundo exterior", pois seus dados são interprados pelas aplicações FrontEnd acima. Essas aplicações não requerem interatividade e  podem ser conferidas no arquvo docker-compose.yml, que consta nesse repositório. 
 
