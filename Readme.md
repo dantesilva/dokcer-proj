@@ -29,6 +29,7 @@ Em uma máquina virtual, mesmo na nuvem, seria possível simular as condições 
 Ambiente foi configurado com 8 Container's no total, distribuidos em camadas. Podemos separar em três câmadas. Duas de monitoramento e segurança e uma de aplicação
 
 #### Camada Monitoramente - Prometheus
+
  - Prometheus: controle de porformance dos containers, através da geração de Logs;
  - Cadvisor: Trabalha ligado ao redis, gerando graficos em tempo real de acordo com os dados coletados pelo redis;
  - Readis: Faz a coleta dos dados das instâncias em docker e armazena em seu banco;
@@ -63,5 +64,19 @@ Para o Projeto, foram mapeados alguns diretórios, de forma a grantir a não vol
 #### Portas de comunicação
 
 As aplicações estão com as portas padrão de comunicação mapeadas. 
+
+#### Acesso as aplicações
+
+Conforme falado anteriormente, cada aplicação tem uma função específca no ambiene. O acesso a cada aplicação deve ser através dos seguintes endereços:
+
+Aplicação PHP: http://40.84.187.192
+
+Graylog: http://40.84.187.192:9000
+
+Prometheus: http//:40.84.187.192:9090
+
+Cardvisor: http//:40.84.187.192:8080
+
+Quanto as outras aplicações, elas tem portas de comunicação apenas dentro do próprio ambiente. Não estão abertas ao "mundo exterior", pois seus dados são interprados pelas aplicações FrontEnd acima.
 
      
