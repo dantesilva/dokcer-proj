@@ -73,9 +73,9 @@ Aplicação PHP: http://40.84.187.192
 
 Graylog: http://40.84.187.192:9000
 
-Prometheus: http//:40.84.187.192:9090
+Prometheus: http://:40.84.187.192:9090
 
-Cardvisor: http//:40.84.187.192:8080
+Cardvisor: http://40.84.187.192:8080
 
 Quanto as outras aplicações, elas tem portas de comunicação apenas dentro do próprio ambiente. Não estão abertas ao "mundo exterior", pois seus dados são interprados pelas aplicações FrontEnd acima.
 
