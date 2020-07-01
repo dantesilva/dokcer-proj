@@ -24,7 +24,7 @@ Em uma máquina virtual, mesmo na nuvem, seria possível simular as condições 
 
 
 
-###  2. Containers:
+###  2. Docker Container:
 
 Ambiente foi configurado com 8 Container's no total, distribuidos em camadas. Podemos separar em três câmadas. Duas de monitoramento e segurança e uma de aplicação
 
