@@ -32,7 +32,7 @@ Em uma máquina virtual, mesmo na nuvem, seria possível simular as condições 
 
 ###  2. Docker Container:
 
-Ambiente foi configurado com 8 Container's no total, distribuidos em camadas. Podemos separar em três câmadas. Duas de monitoramento e segurança e uma de aplicação
+Ambiente foi configurado com 10 Container's no total, distribuidos em camadas. Podemos separar em três câmadas. Duas de monitoramento e segurança e uma de aplicação
 
 #### Camada Monitoramente - Prometheus
 
@@ -52,7 +52,7 @@ Essa camada de monitoramento está sendo realizada diretamente no "Sistema Opera
  - Elasticsearch: Funciona juntamente com o Greaylog. 
  - Mongo DB: Banco de dados Essencial para o funcionamento do Graylog.
  
- ![Alt text](https://github.com/dantesilva/dokcer-proj/blob/master/imagens/ifg_graylog.png "Diagrama camada prometheus") 
+ ![Alt text](https://github.com/dantesilva/dokcer-proj/blob/master/imagens/ifg_graylog.png "Diagrama camada Graylog") 
 
 #### Camada de Aplicação
 
