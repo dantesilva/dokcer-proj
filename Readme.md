@@ -23,6 +23,8 @@ Endereço IP público: 40.84.187.192
 Disco: SSD 120 GB
 Mem.: 8GB
 
+![Alt text](relative/docker-proj/imagens/ambiente_prometheus.png?raw=true "Title")
+
 ### Porque Máquina Virtual e não Docker a as Service?
 
 Em uma máquina virtual, mesmo na nuvem, seria possível simular as condições reais de performance e comportamento. Tornando possível e fácil a migração para um ambiente on premises.
