@@ -88,6 +88,10 @@ Prometheus: http://40.84.187.192:9090
 
 cAdvisor: http://40.84.187.192:8080
 
+Grafana: http://40.84.187.192:3000
+
+NodeExporter: http://40.84.187.192:9100
+
 Quanto as outras aplicações, elas tem portas de comunicação apenas dentro do próprio ambiente. Não estão abertas ao "mundo exterior", pois seus dados são interprados pelas aplicações FrontEnd acima. Essas aplicações não requerem interatividade e  podem ser conferidas no arquvo docker-compose.yml, que consta nesse repositório. 
 
 #### Aplicação PHP 
