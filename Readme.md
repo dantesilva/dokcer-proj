@@ -23,7 +23,7 @@ Endereço IP público: 40.84.187.192
 Disco: SSD 120 GB
 Mem.: 8GB
 
-![Alt text](relative/docker-proj/imagens/ambiente_prometheus.png?raw=true "Title")
+![Alt text](![Alt text](http://full/path/to/img.jpg "Optional title") "Optional title")
 
 ### Porque Máquina Virtual e não Docker a as Service?
 
