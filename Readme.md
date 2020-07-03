@@ -6,7 +6,7 @@ Esse projeto tem por objetivo orquestrar ,com alta disponibilidade, e hospedar s
 
 ## Pré-requisitos
 
-Em princípio não existe pré requisito para rodar o projeto, visto que o Docker Compose faz todo o trabalho de praparação das imagens. Portanto pode ser utilizado tanto em um ambiente na nuvem, quanto on premises. Porém algumas aplicações exigem um pouco mais de perfornamce, como por exemplo o graylog. Mas por se tratar de uma aplicação adaptável, pode ser migrado de um ambiete para outro, sem problemas. Apenas é importante ter atenção as pastas fixas, que são usadas para consulta e armazenamento de dados.
+Em princípio não existe pré requisito para rodar o projeto, visto que o Docker Compose faz todo o trabalho de praparação das imagens. Portanto pode ser utilizado tanto em um ambiente na nuvem, quanto on premises. Porém algumas aplicações exigem um pouco mais de perfornamce, como por exemplo o graylog. Mas por se tratar de uma aplicação adaptável, pode ser migrado de um ambiente para outro, sem problemas. Apenas é importante ter atenção as pastas fixas, que são usadas para consulta e armazenamento de dados.
 
 ## Quanto ao Ambiente
 Projeto hospedado no Microsoft Azure. Para tal foi utilizado uma instancia de Máquina Virtual.
