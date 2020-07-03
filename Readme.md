@@ -22,7 +22,7 @@ Sistema operacional: Linux (debian 10.4)
 Endereço IP público: 40.84.187.192
 Disco: SSD 120 GB
 Mem.: 8GB
-![Alt text](https://github.com/dantesilva/dokcer-proj/blob/master/imagens/ambiente_prometheus.png "Optional title") "Optional title")
+![Alt text](https://github.com/dantesilva/dokcer-proj/blob/master/imagens/ambiente_prometheus.png "Diagrama camada prometheus") 
 
 ### Porque Máquina Virtual e não Docker a as Service?
 
