@@ -51,6 +51,8 @@ Essa camada de monitoramento está sendo realizada diretamente no "Sistema Opera
  - Graylog: Aplicação centrelizadora de Logs;
  - Elasticsearch: Funciona juntamente com o Greaylog. 
  - Mongo DB: Banco de dados Essencial para o funcionamento do Graylog.
+ 
+ ![Alt text](https://github.com/dantesilva/dokcer-proj/blob/master/imagens/ifg_graylog.png "Diagrama camada prometheus") 
 
 #### Camada de Aplicação
 
