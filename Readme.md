@@ -21,8 +21,8 @@ Nome do computador: containers
 Sistema operacional: Linux (debian 10.4)
 Endereço IP público: 40.84.187.192
 Disco: SSD 120 GB
-Mem.: 8GB
-![Alt text](https://github.com/dantesilva/dokcer-proj/blob/master/imagens/ambiente_prometheus.png "Diagrama camada prometheus") 
+ Mem.: 8GB
+
 
 ### Porque Máquina Virtual e não Docker a as Service?
 
@@ -39,6 +39,11 @@ Ambiente foi configurado com 8 Container's no total, distribuidos em camadas. Po
  - Prometheus: controle de porformance dos containers, através da geração de Logs;
  - cAdvisor: Trabalha ligado ao redis, gerando graficos em tempo real de acordo com os dados coletados pelo redis;
  - Readis: Faz a coleta dos dados das instâncias em docker e armazena em seu banco;
+ - Node-exporter - para exportar métricas do Prometheus
+ - Grafana - Para interpretar as métricas do Prometheus em gráficos
+ 
+
+![Alt text](https://github.com/dantesilva/dokcer-proj/blob/master/imagens/ambiente_prometheus.png "Diagrama camada prometheus") 
 
 #### Camada de monitoramento - Graylog
 
