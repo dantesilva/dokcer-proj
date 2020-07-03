@@ -18,9 +18,13 @@ A máquina virtual foi utilizada apenas para conter o ambiênte. Porém o ambien
 #### Configuração
 
 Nome do computador: containers
+
 Sistema operacional: Linux (debian 10.4)
+
 Endereço IP público: 40.84.187.192
+
 Disco: SSD 120 GB
+
  Mem.: 8GB
 
 
